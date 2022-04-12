@@ -35,7 +35,8 @@ namespace numberAnalyzer
                     if ( userNumber < 60)
                     {
                         Console.WriteLine($"{userNumber} is odd and less than 60");
-                    } else if (userNumber > 60)
+                    }
+                    else if (userNumber > 60)
                     {
                         Console.WriteLine($"{userNumber} is odd and greater than 60");
                     }
