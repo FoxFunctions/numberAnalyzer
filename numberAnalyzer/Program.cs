@@ -14,9 +14,8 @@ namespace numberAnalyzer
 
             while (continueLoop)
 
-            {   while (true) {
-
-                    
+            {   while (true)
+                {
                     Console.WriteLine($"Okay, {userName} please enter a number between 1 and 100");
                     int userInput = int.Parse(Console.ReadLine());
                     if (userInput >= 1 && userInput <= 100)
@@ -24,8 +23,8 @@ namespace numberAnalyzer
                         userNumber = userInput;
                         Console.WriteLine($"Okay {userName}. Your number is {userNumber}.");
                         break;
-                       
-                    } else
+                    }
+                    else
                     {
                         Console.WriteLine($"C'mon! Please Follow instructions!");
                     }
@@ -47,17 +46,16 @@ namespace numberAnalyzer
                     if (userNumber <= 25)
                     {
                         Console.WriteLine($"{userNumber} is even and less than 25.");
-                    } else if (userNumber > 25 && userNumber < 60)
+                    }
+                    else if (userNumber > 25 && userNumber <= 60)
                     {
                         Console.WriteLine($"{userNumber} is even and betwwen 26 and 60 inclusive.");
-                    } else if (userNumber > 60)
+                    }
+                    else if (userNumber > 60)
                     {
                         Console.WriteLine($"{userNumber} is even and greater than 60.");
                     }    
                 }
-
-                
-
                 while (true)
                 {
                     Console.WriteLine($"Say, {userName}. Would you like to run this program again? y/n");
@@ -80,10 +78,6 @@ namespace numberAnalyzer
                         continue;
                     }
                 }
-                      
-
-                
-                
             }
         }
     }
